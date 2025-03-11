@@ -1,0 +1,69 @@
+hello! 
+so I am going to make an app using Java and Servlet as traitement pages. I will use POstgres as database.
+I am going to make it in a folder that is mvc (controller,models,etc)
+This is the sujet.
+So It is a factory where we construct beds from foam(eponge de lit).
+Basically, at the beginning I will have a block, then I will transform it into smaller blocks
+(beds,etc).
+The transformed blocks have an usual form 
+U1 
+U2 
+U3 
+U4 
+note that the transformed blocks have a (Longeur,Largeur,Hauteur,PrixDeVente,PrixDeRevient)
+the original blocks have (Longeur,Largeur,Hauteur,PrixDeRevient)
+what we will do is some crud concerning these.
+
+First we will make an insertion page for new blocks with fields:
+name 
+Longeur 
+Largeur 
+Hauteur 
+Prix Revient 
+
+Second we will have a page transformation Block with fields
+block (selecting existing blocks)
+(then after lists of the usual form of blocks, for instance:
+U1
+U2
+U2
+U3
+U4)
+next to each usual blocks there will be a quantity (which means that from the block selected up I will make X number of this usual smaller block)
+
+It will also have an area called Reste with fields:
+Longeur:
+Largeur
+Hauteur:
+
+Our concept in this is that the one who inserts these is supposed to have already calculated what he is putting in 
+Basically from the quantity of U that he chose based on their volume and their volume this is what it should check 
+
+volume of the original block selected - (Volume of U1 * quantity of U1+Volume of U2 * quantity of U2+Volume of U3 * quantity of U3+Volume of U4 * quantity of U4 + reste) 
+MUST BE LESS THAN 2 PERCENT OF THE VOLUME OF THE BLOCK
+
+Third page:
+It is an affichage of all of the Usual blocks that have been transformed ever since. (not the original block then but the usual little blocks transformed after a big block)
+With that we will show a table with columns (block name,quantity,PrixDeRevientTotal,PrixDeVenteTotal,quantity,MoyennePondere[PrixDeRevientTotal/quantity])
+
+
+Forth page:
+It is to affiche what is the maxProfit transformation that will be done with the reste of each bloscks that have been transformed 
+So to know which usual type of block will profit the max, the calculation will be to compare 
+PrixDeRevient/volume of each kind . The biggest of these will be the type of usual block that will bring the max profit.
+after that then, from each reste, it will show how many of that kind of usual block can each reste of block make 
+
+for instance the most profitable is U3,
+then I have 
+BigBlockReste1 , can make 0 pieces of U3
+BigBlockReste2 , can make 1 pieces of U3
+BigBlockReste3, can make 5 pieces of U3
+
+Fifth Page:
+It will show the list of usual blocks transformed from the reste of each big transformed BigBlock, in which the least volume is lost in the reste 
+So how can we use the most volume from the reste
+
+Knowing all of that. 
+Please help me start my project. 
+Dont do anything yet, just wanted to give u a backstory of what we are going to do.
+I will do each of these step by step.

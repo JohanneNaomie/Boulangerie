@@ -1,0 +1,42 @@
+KIDORO/
+├── lib/
+│   └── postgresql-42.7.4.jar      # PostgreSQL JDBC driver
+├── models/
+│   ├── connexion/
+│   │   └── Connexion.java          # Database connection class
+│   ├── materials/
+│   │   ├── Block.java              # Block class
+│   │   ├── Reste.java              # Reste class
+│   │   └── Usuel.java              # Usuel class
+│   ├── process/
+│   │   ├── Transformation.java     # Transformation class
+│   │   └── RefTransformation.java  # RefTransformation class
+│   └── main/
+│       └── Main.java               # Main class for testing
+├── class/                          # Compiled .class files go here
+
+
+
+class/
+├── models/
+│   ├── connexion/
+│   │   └── Connexion.class
+│   ├── materials/
+│   │   ├── Block.class
+│   │   ├── Reste.class
+│   │   └── Usuel.class
+│   ├── process/
+│   │   ├── Transformation.class
+│   │   └── RefTransformation.class
+│   └── main/
+│       └── Main.class
+
+
+Kidoro/
+├── WEB-INF/
+│   ├── classes/                # Compiled .class files (organized by package)
+│   ├── lib/                    # Additional libraries (e.g., PostgreSQL JDBC driver)
+│   └── web.xml                 # Deployment descriptor
+├── controllers/                # Any JSP or HTML files in the root directory
+├── index.jsp                   # Home page or starting point
+└── any other HTML, JSP files, images, etc.
